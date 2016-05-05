@@ -55,6 +55,7 @@ $('#shoppingList').on('click', function () {
     $('.description').toggle();
     $('.contract').toggle();
     $('#shoppingListImage').toggle();
+    $('#shoppingListImage').addClass('animated fadeIn');
 })
 $('#quizApp').on('click', function () {
     $('#quizApp').toggleClass('box shortBox')
@@ -64,8 +65,8 @@ $('#quizApp').on('click', function () {
     $('#hotCold').toggle();
     $('.description').toggle();
     $('.contract').toggle();
-
     $('#quizAppImage').toggle();
+    $('#quizAppImage').addClass('animated fadeIn');
 })
 $('#apiHack').on('click', function () {
     $('#apiHack').toggleClass('box shortBox')
@@ -75,8 +76,8 @@ $('#apiHack').on('click', function () {
     $('#hotCold').toggle();
     $('.description').toggle();
     $('.contract').toggle();
-
     $('#apiHackImage').toggle();
+    $('#apiHackImage').addClass('animated fadeIn');
 })
 $('#hotCold').on('click', function () {
     $('#hotCold').toggleClass('box shortBox')
@@ -87,6 +88,7 @@ $('#hotCold').on('click', function () {
     $('.description').toggle();
     $('.contract').toggle();
     $('#hotColdImage').toggle();
+    $('#hotColdImage').addClass('animated fadeIn');
 })
 
 
