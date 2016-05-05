@@ -4,7 +4,7 @@
 <head>
     <link href='https://fonts.googleapis.com/css?family=Slabo+13px|Open+Sans' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/unique" type="text/css" />
-    <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <link rel='stylesheet' href="node_modules/font-awesome/css/font-awesome.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css" />
@@ -319,79 +319,23 @@
     <hr>
     <a id="contact"></a>
     <section id="contactForm" class="contact-form">
-
         <div class="wow fadeInUp container-fluid">
             <div class="col-md-8 col-md-offset-2">
                 <h2>Let's <span><a href="mailto:wllr.crtny.jyc@gmail.com" target="_blank">TALK</a></span> - code, new opportunities, or anything else on your mind!</h2>
-                <div id="wufoo-z1lw3p4h0bzv27z">
-                    Fill out my <a href="https://crtnywllr.wufoo.com/forms/z1lw3p4h0bzv27z">online form</a>.
-                </div>
-                <div id="wuf-adv" style="font-family:inherit;font-size: small;color:#a7a7a7;text-align:center;display:block;">Online contact and registration forms from <a href="http://www.wufoo.com">Wufoo</a>.</div>
-                <script type="text/javascript">
-                    var z1lw3p4h0bzv27z;
-                    (function (d, t) {
-                        var s = d.createElement(t),
-                            options = {
-                                'userName': 'crtnywllr',
-                                'formHash': 'z1lw3p4h0bzv27z',
-                                'autoResize': true,
-                                'height': '517',
-                                'async': true,
-                                'host': 'wufoo.com',
-                                'header': 'show',
-                                'ssl': true
-                            };
-                        s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
-                        s.onload = s.onreadystatechange = function () {
-                            var rs = this.readyState;
-                            if (rs)
-                                if (rs != 'complete')
-                                    if (rs != 'loaded') return;
-                            try {
-                                z1lw3p4h0bzv27z = new WufooForm();
-                                z1lw3p4h0bzv27z.initialize(options);
-                                z1lw3p4h0bzv27z.display();
-                            } catch (e) {}
-                        };
-                        var scr = d.getElementsByTagName(t)[0],
-                            par = scr.parentNode;
-                        par.insertBefore(s, scr);
-                    })(document, 'script');
-                </script>
-
-                <!-- <div class='contactFormContent'>
-                    <form role="form" method="post" action="contact.php">
-                        <div class="form-group">
-                            <label for="Name">Name</label>
-                            <input type="text" class="form-control" id="name">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email address</label>
-                            <input type="email" class="form-control" id="email">
-                        </div>
-                        <div class="form-group">
-                            <label for="msg">Your words</label>
-                            <textarea class="form-control" rows="3" id="message"></textarea>
-                        </div>
-                        <div class="form-group">
-                            <label for="human" class="col-sm-2 control-label">2 + 3 = ?</label>
-                            <input type="text" class="form-control" id="human" name="human" placeholder="Your Answer">
-                        </div>
-                        <div class="form-group">
-                            <button type="submit" id="submit" class="sendButton btn btn-default col-md-2 col-md-offset-5">Send</button>
-                        </div>
-                        <div class="form-group">
-                            <div id="returnMessage" class="h3 text-center"></div>
-                        </div>
-                    </form>
-                </div>-->
+                <form id="contactform" action="//formspree.io/wllr.crtny.jyc@gmail.com" method="POST">
+                    <h4>Name:</h4>
+                    <input type="text" class='form-control' name="name" required>
+                    <h4>Email:</h4>
+                    <input type="email" class='form-control' name="_replyto" required>
+                    <h4>Your Words:</h4>
+                    <textarea name="message" class='form-control' required></textarea>
+                    <input type="text" name="_gotcha" style="display:none" />
+                    <input type="hidden" name="_next" value="//crtnywllr.github.io/index.html" />
+                    <input type="hidden" name="_subject" value="Website contact" />
+                    <input type="submit" value="Send" class="sendButton btn btn-default col-md-2 col-md-offset-5">
+                </form>
             </div>
         </div>
-
-
-
-
-
     </section>
 
     <footer>
@@ -401,7 +345,7 @@
         <a href="mailto:wllr.crtny.jyc@gmail.com" target="_blank"><i class="fa fa-2x fa-envelope"></i></a>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="http://cdn.jsdelivr.net/velocity/1.2.2/velocity.min.js"></script>`
     <script src="http://cdn.jsdelivr.net/velocity/1.2.2/velocity.ui.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
