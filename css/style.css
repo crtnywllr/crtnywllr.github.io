@@ -267,6 +267,7 @@
     .sendButton {
         color: teal;
         margin-bottom: 2rem;
+        font-size: 1.75rem;
     }
     /* Footer styles
     (all the styles inside the < footer > tag)
