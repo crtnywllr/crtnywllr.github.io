@@ -114,8 +114,3 @@ $("#toProfile").velocity({
 }, {
     loop: 5
 });
-$(".contract").velocity({
-    translateY: "10px"
-}, {
-    loop: 5
-});
