@@ -24,24 +24,37 @@
 */
 
     body {
-        font-family: 'Slabo 13px', serif;
+        font-family: 'Libre Baskerville', serif;
         font-size: 16px;
-        background-image: url(../images/color-overlay.jpg);
+        color: #444;
     }
 
-    .text {
-        font-family: 'UniqueRegular', serif;
+    .sectionTitle {
+        color: #1D2E26;
+        font-family: "Montserrat", cursive;
+        margin-bottom: 4rem;
+    }
+
+    hr {
+        border-color: #1D2E26;
+        border-image: none;
+        border-style: solid none none;
+        border-width: 3px 0 0;
+        margin: 1rem auto;
+        width: 60%;
+        clear: both;
     }
     /* Header styles
     (all the styles inside the < header > or < nav > tags)
 */
 
     .navbar {
-        background-image: url(../images/color-overlay.jpg);
+        padding-bottom: 1rem;
+        background-color: #fff;
     }
 
     .navbar-brand img {
-        width: 3rem;
+        width: 5rem;
     }
 
     .navbar-default {
@@ -53,27 +66,31 @@
     /*Jumbotron Styles*/
 
     .hero .jumbotron {
-        background-image: url(../images/balloons-min.jpg);
+        background-image: url(../images/hotairballoon-min.jpg);
         height: 70rem;
         background-size: cover;
-        background-position: top;
-        text-transform: uppercase;
+        background-position: center;
+        /*text-transform: uppercase;*/
+        text-align: center;
+        font-family: "Montserrat", cursive;
     }
 
-    .hero .jumbotron .stand {
-        margin-top: 14rem;
-        color: #3785A8;
+    .hero .jumbotron .jumboName {
+        margin-top: 4rem;
+        color: #1D2E26;
+        font-size: 4.5rem;
     }
 
-    .hero .jumbotron h3 {
-        font-size: 7.5rem;
-        text-shadow: 2px 2px 1px #c0c0c0, -2px -2px 1px #c0c0c0, -2px 2px 1px #c0c0c0, 2px -2px 1px #c0c0c0;
+    .hero .jumbotron h4 {
+        color: #fafafa;
+        font-size: 3rem;
+        margin-top: 3rem;
     }
 
     .hero .fa-chevron-down {
-        margin-top: 11.5rem;
+        margin-top: 45.5rem;
         font-size: 5rem;
-        color: #3785A8;
+        color: #1D2E26;
     }
     /*Intro Styles*/
 
@@ -90,28 +107,16 @@
 
     .introduction h3,
     .introduction h2 {
-        margin-top: 6rem;
+        line-height: 1.37;
     }
 
-    .introduction a.thinkful {
-        color: #6799FF;
-        text-transform: uppercase;
-        font-family: "Open Sans", sans-serif;
-    }
-
-    .introduction .circle {
-        border-radius: 50%;
-        width: 25rem;
-        -webkit-box-shadow: 3px 3px 30px 5px rgba(0, 0, 0, 0.75);
-        -moz-box-shadow: 3px 3px 30px 5px rgba(0, 0, 0, 0.75);
-        box-shadow: 3px 3px 30px 5px rgba(0, 0, 0, 0.75);
-    }
-    /*Skills Styles*/
-
-    .icons img {
-        max-height: 10rem;
-        width: 10rem;
-        margin-top: 4rem;
+    .about,
+    #apiHackImage,
+    #shoppingListImage,
+    #quizAppImage,
+    #hotColdImage,
+    #shoppingList {
+        margin-bottom: 8rem;
     }
     /*Portfolio Styles*/
 
@@ -119,12 +124,11 @@
         clear: both;
         text-align: center;
         color: #FAF9F7;
-        margin-top: 14rem;
+        margin-top: 8rem;
     }
 
     .portfolio .box {
         height: 54rem;
-        text-shadow: -2px 4px 4px rgba(150, 150, 150, 1);
         padding-bottom: 4rem;
         padding-top: 12rem;
     }
@@ -138,7 +142,7 @@
     }
 
     .portfolio .box:hover {
-        border: 1px solid darkgrey;
+        border: 1px solid #333;
         -webkit-box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.75);
         -moz-box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.75);
         box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.75);
@@ -146,62 +150,69 @@
 
     .portfolio .shortBox {
         height: 12rem;
-        text-shadow: -2px 4px 4px rgba(150, 150, 150, 1);
     }
 
     .portfolio .info {
         min-height: 36rem;
     }
 
-    .portfolio .fa-ellipsis-h:hover {
-        cursor: pointer;
-    }
-
     .screenshot {
         max-height: 60rem;
         width: 80%;
+        padding-top: 6rem;
+    }
+
+    iframe {
+        width: 100%;
+        height: 46rem;
+        padding-top: 3rem;
+        transform: scale(0.75, 0.75);
+        transform-origin: top left;
     }
 
     #shoppingList {
-        background: rgba(35, 133, 168, 0.6);
+        background: rgba(29, 46, 38, 0.9);
     }
 
     #quizApp {
-        background: rgba(133, 178, 201, 0.8);
+        background: rgba(49, 77, 64, 0.9);
     }
 
     #apiHack {
-        background: rgba(63, 184, 142, 0.7);
+        background: rgba(79, 124, 103, 0.9);
     }
 
     #hotCold {
-        background: rgba(33, 130, 126, 0.6);
+        background: rgba(59, 93, 77, 0.9);
+    }
+    /*Skills Styles*/
+
+    .icons img {
+        max-height: 10rem;
+        width: 10rem;
+        margin-top: 4rem;
     }
 
     #shoppingListImage {
-        border: 10px solid rgba(35, 133, 168, 0.6);
-        margin-bottom: 7rem;
+        border: 10px solid rgba(29, 46, 38, 0.9);
+        margin-top: -8rem;
     }
 
     #quizAppImage {
-        border: 10px solid rgba(133, 178, 201, 0.8);
-        margin-bottom: 7rem;
+        border: 10px solid rgba(49, 77, 64, 0.9);
         margin-top: -1px;
     }
 
     #apiHackImage {
-        border: 10px solid rgba(63, 184, 142, 0.7);
-        margin-bottom: 7rem;
+        border: 10px solid rgba(79, 124, 103, 0.9);
         margin-top: -2px;
     }
 
     #hotColdImage {
-        border: 10px solid rgba(33, 130, 126, 0.6);
-        margin-bottom: 7rem;
+        border: 10px solid rgba(59, 93, 77, 0.9);
         margin-top: -3px;
     }
 
-    .portfolio .fa-ellipsis-h,
     #shoppingListImage,
     #quizAppImage,
     #apiHackImage,
@@ -209,89 +220,68 @@
         display: none;
     }
 
-    .details h4,
-    .details h2,
-    .details .btn {
-        color: black;
+    .details h4 {
+        color: #444;
         margin-top: 7rem;
     }
 
     .details .btn {
-        background-color: #29a9df;
-        color: #faf9f7;
-    }
-
-    .details a {
-        color: black;
+        background-color: #fff;
+        border: 1px solid #1D2E26;
+        color: #1D2E26;
+        margin: 4rem auto;
     }
     /*ContactStyles*/
 
-    hr {
-        border-color: #c0c0c0;
-        border-image: none;
-        border-style: solid none none;
-        border-width: 3px 0 0;
-        margin: 1rem auto;
-        width: 60%;
-        clear: both;
-    }
-
-    .contact-form {
-        min-height: 60rem;
-        margin-top: 10rem;
-    }
-
-    .contact-form h2 {
+    .contactInfo {
         text-align: center;
-        margin-top: 10rem;
     }
 
-    .contact-form h2 span {
-        font-family: 'UniqueRegular', serif;
+    .contactInfo h2 {
+        text-align: center;
+        margin-top: 8rem;
     }
 
-    .contact-form a {
-        color: #D25A33;
+    .contactInfo p {
+        padding: 1rem;
     }
 
-    .contact-form a:hover {
-        color: teal;
+    .contactInfo a {
+        color: #608976;
+    }
+
+    .contactInfo a:hover {
+        color: #1D2E26;
         text-decoration: none;
     }
 
-    .form-control {
-        background-color: #FAF9F7;
-        margin-bottom: 1rem;
-    }
-
-    .sendButton {
-        color: teal;
-        margin-bottom: 2rem;
-        font-size: 1.75rem;
+    contactInfo .fa {
+        margin-right: 1.5rem;
+        margin-top: 1rem;
     }
     /* Footer styles
-    (all the styles inside the < footer > tag)
+(all the styles inside the < footer > tag)
 */
 
     footer {
-        background-color: #c4c4cf;
-        color: #faf9f7;
         height: 10rem;
+        background-color: #1D2E26;
+        color: #fff;
+        margin-top: 8rem;
         text-align: center;
+        margin-bottom: -3rem;
+    }
+
+    footer p {
+        font-size: 0.9rem;
     }
 
     footer a {
-        color: #faf9f7;
+        color: #fff;
     }
 
-    footer a:focus,
     footer a:hover {
-        color: teal;
-    }
-
-    footer .fa {
-        margin-right: 1.5rem;
-        margin-top: 1rem;
+        color: #fff;
     }
     /* Responsive styles
     (the very last module in the CSS, contains all the media queries and it is dealing with the compatibility with mobiles and tablets)
