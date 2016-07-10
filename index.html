@@ -30,7 +30,7 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li><a id="profileLink" href="#intro">Profile</a></li>
                         <li><a id="portfolioLink" href="#works">Portfolio</a></li>
-                        <li><a id="resumeLink" href="resume.html" target="_blank">Resume</a></li>
+                        <li><a id="resumeLink" href="resume.html" target="_blank">Résumé</a></li>
                         <li><a id="contactLink" href="#contact"><span style="color: #1D2E26">Contact</span></a></li>
                     </ul>
                 </div>
@@ -59,7 +59,7 @@
 
     <a id="intro"></a>
     <section id="profile " class='introduction'>
-        <div class="about container-fluid text-center col-xs-10 col-xs-offset-1">
+        <div class="about bottomSpacer container-fluid text-center col-xs-10 col-xs-offset-1">
             <h2 class="text-uppercase sectionTitle">About Me</h2>
             <div class="row">
                 <div class="col-md-5"><img src="images/bwprofile.JPG" alt="Profile picture" /></div>
@@ -74,37 +74,12 @@
 
     <a id="works"></a>
     <section class="portfolio">
-        <div class="wow fadeInUp container-fluid col-md-10 col-md-offset-1">
+        <div class=" bottomSpacer wow fadeInUp container-fluid col-md-10 col-md-offset-1">
             <h2 class="text-uppercase sectionTitle">Selected Works</h2>
-            <div id='shoppingList' class="box col-md-3">
+            <!--API Hack-->
+            <div id='apiHack' class="box col-md-3">
                 <div class="info">
-                    <h2>Pictionary</h2>
-                    <div class="description">
-                        <h4>A responsive and interactive app where users can add, check off, and delete items for their shopping list.</h4>
-                        <h4>Skills: HTML5, CSS3, jQuery</h4>
-                    </div>
-                    <i class='fa fa-2x fa-chevron-down'></i>
-                </div>
-            </div>
-
-
-            <div id="quizApp" class="box col-md-3">
-                <div class="info">
-                    <h2>Where in the World Are You? Quiz</h2>
-                    <div class="description">
-                        <h4>A quiz where users can submit guesses, track questions answered and number of correct inputs, as well as get answer results at the end.</h4>
-
-                        <h4>Skills: HTML5, CSS3, jQuery, Object Oriented JS</h4>
-                    </div>
-                    <i class='fa fa-2x fa-chevron-down'></i>
-                </div>
-            </div>
-
-
-            <div id="apiHack" class="box col-md-3">
-
-                <div class="info">
-                    <h2>LearnIt Api Hack</h2>
+                    <h2>LearnIt API Hack</h2>
                     <div class="description">
                         <h4>Combining API data pulled from GoogleMaps, YouTube, GoogleBooks, and Meetup to give users a one stop reference shop for learning a new subject.</h4>
                         <h4>Skills: HTML5, CSS3, Bootstrap, jQuery, AJAX</h4>
@@ -112,95 +87,43 @@
                     <i class='fa fa-2x fa-chevron-down'></i>
                 </div>
             </div>
-
-            <div id="hotCold" class="box col-md-3">
+            <!-- Quiz App -->
+            <div id="quizApp" class="box col-md-3">
+                <div class="info">
+                    <h2>Where in the World Are You? Quiz</h2>
+                    <div class="description">
+                        <h4>A quiz API where users can submit guesses, track questions answered and number of correct inputs, as well as get answer results at the end.</h4>
+                        <h4>Skills: HTML5, CSS3, jQuery, Object Oriented JS, NodeJS</h4>
+                    </div>
+                    <i class='fa fa-2x fa-chevron-down'></i>
+                </div>
+            </div>
+            <!--Pictionary -->
+            <div id="pictionary" class="box col-md-3">
+                <div class="info">
+                    <h2>Pictionary</h2>
+                    <div class="description">
+                        <h4>An interactive drawing game that uses web sockets to allow users to draw, guess, change winners, and keep score in real time.</h4>
+                        <h4>Skills: HTML5, CSS3, jQuery, JS, NodeJS, HTML5 Canvas</h4>
+                    </div>
+                    <i class='fa fa-2x fa-chevron-down'></i>
+                </div>
+            </div>
+            <!--Note Keeper-->
+            <div id="noteKeeper" class="box col-md-3">
                 <div class="info">
                     <h2>Note Keeper</h2>
                     <div class="description">
-                        <h4>Creating functionality for an interactive game where users enter guesses and receive feedback on reaching a hidden secret number.</h4>
-                        <h4>Skills: HTML5, CSS3, jQuery</h4>
+                        <h4>A note keeping software designed for therapists that tracks clients, notes, and payments with secure and persistent data.</h4>
+                        <h4>Skills: HTML5, CSS3, jQuery, DataTables, Bootstrap, Firebase</h4>
                     </div>
                     <i class='fa fa-2x fa-chevron-down'></i>
                 </div>
             </div>
         </div>
-        <div class="container-fluid text-center col-md-10 col-md-offset-1">
-            <div id="shoppingListImage">
-                <div class="row">
-                    <div class="col-md-6">
-                        <img class="screenshot" src="images/pictionary.png" alt="">
-                    </div>
-                    <div class="col-md-6 details">
-                        <div class="col-xs-10 col-xs-offset-1">
-                            <h4>A responsive and interactive app where users can add, check off, and delete items for their shopping list.</h4>
-                            <h2 class="sectionTitle">SKILLS</h2>
-                        </div>
-                        <hr>
-                        <div class="row">
-                            <div class="col-xs-10 col-xs-offset-1">
-                                <div class="col-xs-4">
-                                    <div class="icons col-xs-12"><img src="images/html.png" alt=""></div>
-                                </div>
-                                <div class="col-xs-4">
-                                    <div class="icons col-xs-12"><img src="images/css.png" alt=""></div>
-                                </div>
-                                <div class="col-xs-4">
-                                    <div class="icons col-xs-12"><img src="images/jquery-icon.png" alt=""></div>
-                                </div>
-                            </div>
-                        </div>
-                        <p>
-                            <a target="blank" href="http://www.github.com/crtnywllr/shopping-app">
-                                <button class="btn btn-lg">Code</button>
-                            </a>
-                            <a target="blank" href="http://crtnywllr.github.io/shopping-app">
-                                <button class="btn btn-lg">Demo</button>
-                            </a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid text-center col-md-10 col-md-offset-1">
-            <div id="quizAppImage">
-                <div class="row">
-                    <div class="col-md-6">
-                        <img class="screenshot" src="images/quiz.png" alt="">
-                    </div>
-                    <div class="col-md-6 details">
-                        <div class="col-xs-10 col-xs-offset-1">
-                            <h4>A quiz where users can submit guesses, track questions answered and number of correct inputs, as well as get answer results at the end.</h4>
-                            <h2 class="sectionTitle">SKILLS</h2>
-                        </div>
-                        <hr>
-                        <div class="row">
-                            <div class="col-xs-10 col-xs-offset-1">
-                                <div class="col-xs-3">
-                                    <div class="icons col-xs-12"><img src="images/html.png" alt=""></div>
-                                </div>
-                                <div class="col-xs-3">
-                                    <div class="icons col-xs-12"><img src="images/css.png" alt=""></div>
-                                </div>
-                                <div class="col-xs-3">
-                                    <div class="icons col-xs-12"><img src="images/javascript.png" alt=""></div>
-                                </div>
-                                <div class="col-xs-3">
-                                    <div class="icons col-xs-12"><img src="images/jquery-icon.png" alt=""></div>
-                                </div>
-                            </div>
-                        </div>
-                        <p>
-                            <a target="blank" href="http://www.github.com/crtnywllr/quiz-app">
-                                <button class="btn btn-lg ">Code</button>
-                            </a>
-                            <a target="blank" href="http://quizapp-crtnywllr.rhcloud.com">
-                                <button class="btn btn-lg">Demo</button>
-                            </a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <!--/.container-fluid-->
+        <!-- Images and Details -->
+        <!--API Hack -->
         <div class="container-fluid text-center col-md-10 col-md-offset-1">
             <div id="apiHackImage">
                 <div class="row">
@@ -238,46 +161,163 @@
                             </a>
                         </p>
                     </div>
+                    <!-- /.details -->
                 </div>
+                <!-- ./row -->
             </div>
+            <!-- /#apiHackImage -->
         </div>
+        <!--/.container-fluid -->
+        <!-- Quiz App -->
         <div class="container-fluid text-center col-md-10 col-md-offset-1">
-            <div id="hotColdImage">
+            <div id="quizAppImage">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img class="screenshot" src="images/quiz.png" alt="">
+                    </div>
+                    <div class="col-md-6 details">
+                        <div class="col-xs-10 col-xs-offset-1">
+                            <h4>A note keeping software designed for therapists that tracks clients, notes, and payments with secure and persistent data.</h4>
+                            <h4>Skills: HTML5, CSS3, jQuery, DataTables, Bootstrap, Firebase</h4>
+                            <h2 class="sectionTitle">SKILLS</h2>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-xs-10 col-xs-offset-1">
+                                <div class="col-xs-3">
+                                    <div class="icons col-xs-12"><img src="images/html.png" alt=""></div>
+                                </div>
+                                <div class="col-xs-3">
+                                    <div class="icons col-xs-12"><img src="images/css.png" alt=""></div>
+                                </div>
+                                <div class="col-xs-3">
+                                    <div class="icons col-xs-12"><img src="images/javascript.png" alt=""></div>
+                                </div>
+                                <div class="col-xs-3">
+                                    <div class="icons col-xs-12"><img src="images/jquery-icon.png" alt=""></div>
+                                </div>
+                                <div class="col-xs-3">
+                                    <div class="icons col-xs-12"><img src="images/nodejs.svg" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <p>
+                            <a target="blank" href="http://www.github.com/crtnywllr/quiz-app">
+                                <button class="btn btn-lg ">Code</button>
+                            </a>
+                            <a target="blank" href="http://quizapp-crtnywllr.rhcloud.com">
+                                <button class="btn btn-lg">Demo</button>
+                            </a>
+                        </p>
+                    </div>
+                    <!-- /.details -->
+                </div>
+                <!-- ./row -->
+            </div>
+            <!-- /#quizAppImage -->
+        </div>
+        <!--/.container-fluid -->
+        <!--Pictionary -->
+        <div class="container-fluid text-center col-md-10 col-md-offset-1">
+            <div id="pictionaryImage">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img class="screenshot" src="images/pictionary.png" alt="">
+                    </div>
+                    <div class="col-md-6 details">
+                        <div class="col-xs-10 col-xs-offset-1">
+                            <h4>An interactive drawing game that uses web sockets to allow users to draw, guess, change winners, and keep score in real time.</h4>
+                            <h2 class="sectionTitle">SKILLS</h2>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-xs-10 col-xs-offset-1">
+                                <div class="row">
+                                    <div title="HTML5" class="col-xs-4">
+                                        <div class="icons col-xs-12"><img src="images/html.png" alt=""></div>
+                                    </div>
+                                    <div title="CSS3" class="col-xs-4">
+                                        <div class="icons col-xs-12"><img src="images/css.png" alt=""></div>
+                                    </div>
+                                    <div title="JavaScript" class="col-xs-4">
+                                        <div class="icons col-xs-12"><img src="images/javascript.png" alt=""></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div title="jQuery" class="col-xs-4">
+                                        <div class="icons col-xs-12"><img src="images/jquery-icon.png" alt=""></div>
+                                    </div>
+                                    <div title="NodeJS" class="col-xs-4">
+                                        <div class="icons col-xs-12"><img src="images/nodejs.svg" alt=""></div>
+                                    </div>
+                                    <div title="Sockets.io" class="col-xs-4">
+                                        <div class="icons col-xs-12"><img src="images/socket-io.svg" alt=""></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p>
+                            <a target="blank" href="http://www.github.com/crtnywllr/node-pictionary">
+                                <button class="btn btn-lg">Code</button>
+                            </a>
+                            <a target="blank" href="https://limitless-reef-83019.herokuapp.com">
+                                <button class="btn btn-lg">Demo</button>
+                            </a>
+                        </p>
+                    </div>
+                    <!-- /.details -->
+                </div>
+                <!-- ./row -->
+            </div>
+            <!-- /#pictionaryImage -->
+        </div>
+        <!--/.container-fluid -->
+        <!-- Note Keeper -->
+        <div class="container-fluid text-center col-md-10 col-md-offset-1">
+            <div id="noteKeeperImage">
                 <div class="row">
                     <div class="col-md-6">
                         <img class="screenshot" src="images/noteKeeper.png" alt="">
                     </div>
                     <div class="col-md-6 details">
                         <div class="col-xs-10 col-xs-offset-1">
-                            <h4>Creating functionality for an interactive game where users enter guesses and receive feedback on reaching a hidden secret number.</h4>
+                            <h4>A note keeping software designed for therapists that tracks clients, notes, and payments with secure and persistent data.</h4>
+                            <h4>Skills: HTML5, CSS3, jQuery, DataTables, Bootstrap, Firebase</h4>
                             <h2 class="sectionTitle">SKILLS</h2>
                         </div>
                         <hr>
                         <div class="row">
                             <div class="col-xs-10 col-xs-offset-1">
-                                <div class="col-xs-4">
+                                <div class="col-xs-3">
                                     <div class="icons col-xs-12"><img src="images/html.png" alt=""></div>
                                 </div>
-                                <div class="col-xs-4 ">
+                                <div class="col-xs-3 ">
                                     <div class="icons col-xs-12"><img src="images/css.png" alt=""></div>
                                 </div>
-                                <div class="col-xs-4">
+                                <div class="col-xs-3">
                                     <div class="icons col-xs--12"><img src="images/jquery-icon.png" alt=""></div>
+                                </div>
+                                <div class="col-xs-3">
+                                    <div class="icons col-xs--12"><img src="images/firebase.svg" alt=""></div>
                                 </div>
                             </div>
                         </div>
                         <p>
-                            <a target="blank" href="http://www.github.com/crtnywllr/hot-or-cold">
+                            <a target="blank" href="http://www.github.com/crtnywllr/notes-app">
                                 <button class="btn btn-lg">Code</button>
                             </a>
-                            <a target="blank" href="http://crtnywllr.github.io/hot-or-cold">
+                            <a target="blank" href="http://notekeeper-b377d.firebaseapp.com">
                                 <button class="btn btn-lg">Demo</button>
                             </a>
                         </p>
                     </div>
+                    <!-- /.details -->
                 </div>
+                <!-- ./row -->
             </div>
+            <!-- /#noteKeeperImage -->
         </div>
+        <!--/.container-fluid -->
     </section>
     <hr>
     <a id="contact"></a>

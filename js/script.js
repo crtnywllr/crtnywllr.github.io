@@ -1,53 +1,53 @@
 $(document).ready(function () {
 
     //Expand and Contract Works
-    $('#shoppingList').on('click', function () {
-        $('#shoppingList').toggleClass('box shortBox')
-        $('#shoppingList').toggleClass('col-md-3 col-md-12');
+    $('#pictionary').on('click', function () {
+        $('#pictionary').toggleClass('box shortBox')
+        $('#pictionary').toggleClass('col-md-3 col-md-12');
         $("i").toggleClass('fa-chevron-down fa-chevron-up');
         $('#quizApp').toggle();
         $('#apiHack').toggle();
-        $('#hotCold').toggle();
+        $('#noteKeeper').toggle();
         $('.description').toggle();
         $('.contract').toggle();
-        $('#shoppingListImage').toggle();
-        $('#shoppingListImage').addClass('animated fadeIn');
+        $('#pictionaryImage').toggle();
+        $('#pictionaryImage').addClass('animated fadeIn bottomSpacer');
     })
     $('#quizApp').on('click', function () {
         $('#quizApp').toggleClass('box shortBox')
         $('#quizApp').toggleClass('col-md-3 col-md-12');
         $("i").toggleClass('fa-chevron-down fa-chevron-up');
-        $('#shoppingList').toggle();
+        $('#pictionary').toggle();
         $('#apiHack').toggle();
-        $('#hotCold').toggle();
+        $('#noteKeeper').toggle();
         $('.description').toggle();
         $('.contract').toggle();
         $('#quizAppImage').toggle();
-        $('#quizAppImage').addClass('animated fadeIn');
+        $('#quizAppImage').addClass('animated fadeIn bottomSpacer');
     })
     $('#apiHack').on('click', function () {
         $('#apiHack').toggleClass('box shortBox')
         $('#apiHack').toggleClass('col-md-3 col-md-12');
         $("i").toggleClass('fa-chevron-down fa-chevron-up');
         $('#quizApp').toggle();
-        $('#shoppingList').toggle();
-        $('#hotCold').toggle();
+        $('#pictionary').toggle();
+        $('#noteKeeper').toggle();
         $('.description').toggle();
         $('.contract').toggle();
         $('#apiHackImage').toggle();
-        $('#apiHackImage').addClass('animated fadeIn');
+        $('#apiHackImage').addClass('animated fadeIn bottomSpacer');
     })
-    $('#hotCold').on('click', function () {
-        $('#hotCold').toggleClass('box shortBox')
-        $('#hotCold').toggleClass('col-md-3 col-md-12');
+    $('#noteKeeper').on('click', function () {
+        $('#noteKeeper').toggleClass('box shortBox')
+        $('#noteKeeper').toggleClass('col-md-3 col-md-12');
         $("i").toggleClass('fa-chevron-down fa-chevron-up');
         $('#quizApp').toggle();
         $('#apiHack').toggle();
-        $('#shoppingList').toggle();
+        $('#pictionary').toggle();
         $('.description').toggle();
         $('.contract').toggle();
-        $('#hotColdImage').toggle();
-        $('#hotColdImage').addClass('animated fadeIn');
+        $('#noteKeeperImage').toggle();
+        $('#noteKeeperImage').addClass('animated fadeIn bottomSpacer');
     })
 
 

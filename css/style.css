@@ -40,9 +40,13 @@
         border-image: none;
         border-style: solid none none;
         border-width: 3px 0 0;
-        margin: 1rem auto;
+        margin: 0 auto;
         width: 60%;
         clear: both;
+    }
+
+    .bottomSpacer {
+        margin-bottom: 8rem;
     }
     /* Header styles
     (all the styles inside the < header > or < nav > tags)
@@ -109,15 +113,6 @@
     .introduction h2 {
         line-height: 1.37;
     }
-
-    .about,
-    #apiHackImage,
-    #shoppingListImage,
-    #quizAppImage,
-    #hotColdImage,
-    #shoppingList {
-        margin-bottom: 8rem;
-    }
     /*Portfolio Styles*/
 
     .portfolio {
@@ -143,8 +138,6 @@
 
     .portfolio .box:hover {
         border: 1px solid #333;
-        -webkit-box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.75);
-        -moz-box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.75);
         box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.75);
     }
 
@@ -154,6 +147,7 @@
 
     .portfolio .info {
         min-height: 36rem;
+        padding: 1rem;
     }
 
     .screenshot {
@@ -170,8 +164,8 @@
         transform-origin: top left;
     }
 
-    #shoppingList {
-        background: rgba(29, 46, 38, 0.9);
+    #pictionary {
+        background: rgba(79, 124, 103, 0.9);
     }
 
     #quizApp {
@@ -179,10 +173,10 @@
     }
 
     #apiHack {
-        background: rgba(79, 124, 103, 0.9);
+        background: rgba(29, 46, 38, 0.9);
     }
 
-    #hotCold {
+    #noteKeeper {
         background: rgba(59, 93, 77, 0.9);
     }
     /*Skills Styles*/
@@ -192,31 +186,32 @@
         width: 10rem;
         margin-top: 4rem;
     }
+    /*Details Styles*/
 
-    #shoppingListImage {
-        border: 10px solid rgba(29, 46, 38, 0.9);
-        margin-top: -8rem;
+    #pictionaryImage {
+        border: 10px solid rgba(79, 124, 103, 0.9);
+        margin-top: -8.2rem;
     }
 
     #quizAppImage {
         border: 10px solid rgba(49, 77, 64, 0.9);
-        margin-top: -1px;
+        margin-top: -8.1rem;
     }
 
     #apiHackImage {
-        border: 10px solid rgba(79, 124, 103, 0.9);
-        margin-top: -2px;
+        border: 10px solid rgba(29, 46, 38, 0.9);
+        margin-top: -8rem;
     }
 
-    #hotColdImage {
+    #noteKeeperImage {
         border: 10px solid rgba(59, 93, 77, 0.9);
-        margin-top: -3px;
+        margin-top: -8.3rem;
     }
 
-    #shoppingListImage,
+    #pictionaryImage,
     #quizAppImage,
     #apiHackImage,
-    #hotColdImage {
+    #noteKeeperImage {
         display: none;
     }
 
@@ -308,11 +303,9 @@
         body {
             color: green;
         }
-    }
-    /*iPhone portrait*/
-
-    @media only screen and (max-width: 320px) {
-        body {
-            color: purple;
+        .icons img {
+            max-height: 5rem;
+            width: 5rem;
+            margin-top: 2rem;
         }
     }
