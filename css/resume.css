@@ -89,6 +89,10 @@ li {
     text-transform: uppercase;
 }
 
+.download:hover {
+    cursor: pointer;
+}
+
 
 /*Header/Contact Info*/
 

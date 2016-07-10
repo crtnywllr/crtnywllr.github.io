@@ -86,7 +86,7 @@
     }
 
     .hero .jumbotron h4 {
-        color: #fafafa;
+        color: #fff;
         font-size: 3rem;
         margin-top: 3rem;
     }
@@ -117,8 +117,8 @@
 
     .portfolio {
         clear: both;
+        color: #fff;
         text-align: center;
-        color: #FAF9F7;
         margin-top: 8rem;
     }
 
@@ -129,7 +129,8 @@
     }
 
     .portfolio .box h2 {
-        min-height: 7rem;
+        min-height: 12rem;
+        margin-top: 0;
     }
 
     .portfolio .box h4 {
@@ -187,6 +188,18 @@
         margin-top: 4rem;
     }
     /*Details Styles*/
+
+    .closeDetails {
+        margin-top: 1rem;
+        margin-right: 4rem;
+        text-align: right;
+        color: #444;
+    }
+
+    i:hover,
+    .closeDetails:hover {
+        cursor: pointer;
+    }
 
     #pictionaryImage {
         border: 10px solid rgba(79, 124, 103, 0.9);

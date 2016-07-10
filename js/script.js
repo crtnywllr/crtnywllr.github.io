@@ -5,7 +5,7 @@ $(document).ready(function () {
             el.toggle();
             el.addClass('animated fadeIn');
         });
-        $("i").toggleClass('fa-chevron-down fa-chevron-up');
+        $(".portfolio i").toggleClass('fa-chevron-down fa-chevron-up');
         $('.description').toggle();
         $('.contract').toggle();
         show.addClass('animated fadeIn');
@@ -27,6 +27,18 @@ $(document).ready(function () {
         showHide([$('#quizApp'), $('#apiHack'), $('#noteKeeper')], $("#pictionary"), $("#pictionaryImage"));
     });
     $('#noteKeeper').on('click', function () {
+        showHide([$('#quizApp'), $('#apiHack'), $('#pictionary')], $('#noteKeeper'), $('#noteKeeperImage'));
+    });
+    $('#apiHackClose').on('click', function () {
+        showHide([$('#quizApp'), $('#pictionary'), $('#noteKeeper')], $('#apiHack'), $('#apiHackImage'));
+    });
+    $('#quizAppClose').on('click', function () {
+        showHide([$('#pictionary'), $('#apiHack'), $('#noteKeeper')], $('#quizApp'), $('#quizAppImage'));
+    });
+    $('#pictionaryClose').on('click', function () {
+        showHide([$('#quizApp'), $('#apiHack'), $('#noteKeeper')], $("#pictionary"), $("#pictionaryImage"));
+    });
+    $('#noteKeeperClose').on('click', function () {
         showHide([$('#quizApp'), $('#apiHack'), $('#pictionary')], $('#noteKeeper'), $('#noteKeeperImage'));
     });
 
