@@ -239,6 +239,12 @@
         color: #1D2E26;
         margin: 4rem auto;
     }
+
+    .demoReroute {
+        color: #444;
+        margin-bottom: 3rem;
+        margin-top: -3rem;
+    }
     /*ContactStyles*/
 
     .contactInfo {
