@@ -3,43 +3,43 @@ $(document).ready(function () {
     function showHide(hide, show, showImage) {
         hide.forEach(function (el) {
             el.toggle();
-            el.addClass('animated fadeIn');
+            el.addClass("animated fadeIn");
         });
-        $(".portfolio i").toggleClass('fa-chevron-down fa-chevron-up');
-        $('.description').toggle();
-        $('.contract').toggle();
-        show.addClass('animated fadeIn');
-        show.toggleClass('box shortBox');
-        show.toggleClass('col-md-3 col-md-12');
+        $(".portfolio i").toggleClass("fa-chevron-down fa-chevron-up");
+        $(".description").toggle();
+        $(".contract").toggle();
+        show.addClass("animated fadeIn");
+        show.toggleClass("box shortBox");
+        show.toggleClass("col-md-3 col-md-12");
         showImage.toggle();
-        showImage.addClass('animated fadeIn bottomSpacer')
+        showImage.addClass("animated fadeIn bottomSpacer")
     };
 
     //Expand and Contract Works
 
-    $('#apiHack').on('click', function () {
-        showHide([$('#quizApp'), $('#pictionary'), $('#noteKeeper')], $('#apiHack'), $('#apiHackImage'));
+    $("#apiHack").on("click", function () {
+        showHide([$("#quizApp"), $("#pictionary"), $("#noteKeeper")], $("#apiHack"), $("#apiHackImage"));
     });
-    $('#quizApp').on('click', function () {
-        showHide([$('#pictionary'), $('#apiHack'), $('#noteKeeper')], $('#quizApp'), $('#quizAppImage'));
+    $("#quizApp").on("click", function () {
+        showHide([$("#pictionary"), $("#apiHack"), $("#noteKeeper")], $("#quizApp"), $("#quizAppImage"));
     });
-    $('#pictionary').on('click', function () {
-        showHide([$('#quizApp'), $('#apiHack'), $('#noteKeeper')], $("#pictionary"), $("#pictionaryImage"));
+    $("#pictionary").on("click", function () {
+        showHide([$("#quizApp"), $("#apiHack"), $("#noteKeeper")], $("#pictionary"), $("#pictionaryImage"));
     });
-    $('#noteKeeper').on('click', function () {
-        showHide([$('#quizApp'), $('#apiHack'), $('#pictionary')], $('#noteKeeper'), $('#noteKeeperImage'));
+    $("#noteKeeper").on("click", function () {
+        showHide([$("#quizApp"), $("#apiHack"), $("#pictionary")], $("#noteKeeper"), $("#noteKeeperImage"));
     });
-    $('#apiHackClose').on('click', function () {
-        showHide([$('#quizApp'), $('#pictionary'), $('#noteKeeper')], $('#apiHack'), $('#apiHackImage'));
+    $("#apiHackClose").on("click", function () {
+        showHide([$("#quizApp"), $("#pictionary"), $("#noteKeeper")], $("#apiHack"), $("#apiHackImage"));
     });
-    $('#quizAppClose').on('click', function () {
-        showHide([$('#pictionary'), $('#apiHack'), $('#noteKeeper')], $('#quizApp'), $('#quizAppImage'));
+    $("#quizAppClose").on("click", function () {
+        showHide([$("#pictionary"), $("#apiHack"), $("#noteKeeper")], $("#quizApp"), $("#quizAppImage"));
     });
-    $('#pictionaryClose').on('click', function () {
-        showHide([$('#quizApp'), $('#apiHack'), $('#noteKeeper')], $("#pictionary"), $("#pictionaryImage"));
+    $("#pictionaryClose").on("click", function () {
+        showHide([$("#quizApp"), $("#apiHack"), $("#noteKeeper")], $("#pictionary"), $("#pictionaryImage"));
     });
-    $('#noteKeeperClose').on('click', function () {
-        showHide([$('#quizApp'), $('#apiHack'), $('#pictionary')], $('#noteKeeper'), $('#noteKeeperImage'));
+    $("#noteKeeperClose").on("click", function () {
+        showHide([$("#quizApp"), $("#apiHack"), $("#pictionary")], $("#noteKeeper"), $("#noteKeeperImage"));
     });
 
 
