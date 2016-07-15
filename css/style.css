@@ -1,330 +1,337 @@
-    /* CSS reset
+/* CSS reset
     (all the browsers will see the website in the same by setting every tag to 0 (the website will look the same on all browsers))
 */
 
-    * {
-        margin: 0;
-        padding: 0;
-        border: 0;
-        font-size: 100%;
-        /*The box-sizing property is used to tell the browser what the sizing properties (width and height) should include border-box.*/
-        box-sizing: border-box;
-        /*reset Chrome user agent styles*/
-        -webkit-margin-before: 0px;
-        -webkit-margin-after: 0px;
-        -webkit-margin-start: 0px;
-        -webkit-margin-end: 0px;
-        -webkit-padding-before: 0px;
-        -webkit-padding-after: 0px;
-        -webkit-padding-start: 0px;
-        -webkit-padding-end: 0px;
-    }
-    /* General styles
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    /*The box-sizing property is used to tell the browser what the sizing properties (width and height) should include border-box.*/
+    box-sizing: border-box;
+    /*reset Chrome user agent styles*/
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-before: 0px;
+    -webkit-padding-after: 0px;
+    -webkit-padding-start: 0px;
+    -webkit-padding-end: 0px;
+}
+
+
+/* General styles
     (the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules bellow (h2, h3, h4, h5, h6, p, a, ul, li))
 */
 
-    body {
-        font-family: 'Libre Baskerville', serif;
-        font-size: 16px;
-        color: #444;
-    }
+body {
+    font-family: Libre Baskerville, serif;
+    font-size: 16px;
+    color: #444;
+}
 
-    .sectionTitle {
-        color: #1D2E26;
-        font-family: "Montserrat", cursive;
-        margin-bottom: 4rem;
-    }
+.sectionTitle {
+    color: #1D2E26;
+    font-family: "Montserrat", cursive;
+    margin-bottom: 4rem;
+}
 
-    hr {
-        border-color: #1D2E26;
-        border-image: none;
-        border-style: solid none none;
-        border-width: 3px 0 0;
-        margin: 0 auto;
-        width: 60%;
-        clear: both;
-    }
+hr {
+    border-color: #1D2E26;
+    border-image: none;
+    border-style: solid none none;
+    border-width: 3px 0 0;
+    margin: 0 auto;
+    width: 60%;
+    clear: both;
+}
 
-    .bottomSpacer {
-        margin-bottom: 8rem;
-    }
-    /* Header styles
+.bottomSpacer {
+    margin-bottom: 8rem;
+}
+
+
+/* Header styles
     (all the styles inside the < header > or < nav > tags)
 */
 
-    .navbar {
-        padding-bottom: 1rem;
-        background-color: #fff;
-    }
+.navbar {
+    padding-bottom: 1rem;
+    background-color: #fff;
+}
 
-    .navbar-brand img {
-        width: 5rem;
-    }
+.navbar-brand img {
+    width: 5rem;
+}
 
-    .navbar-default {
-        border: none;
-    }
-    /* Content styles
+.navbar-default {
+    border: none;
+}
+
+
+/* Content styles
     (all the styles inside the < sections > or < aside > tags)
 */
-    /*Jumbotron Styles*/
 
-    .hero .jumbotron {
-        background-image: url(../images/hotairballoon-min.jpg);
-        height: 70rem;
-        background-size: cover;
-        background-position: center;
-        /*text-transform: uppercase;*/
-        text-align: center;
-        font-family: "Montserrat", cursive;
-    }
 
-    .hero .jumbotron .jumboName {
-        margin-top: 4rem;
-        color: #1D2E26;
-        font-size: 4.5rem;
-    }
+/*Jumbotron Styles*/
 
-    .hero .jumbotron h4 {
-        color: #fff;
-        font-size: 3rem;
-        margin-top: 3rem;
-    }
+.hero .jumbotron {
+    background-image: url(../images/hotairballoon-min.jpg);
+    height: 70rem;
+    background-size: cover;
+    background-position: center;
+    /*text-transform: uppercase;*/
+    text-align: center;
+    font-family: "Montserrat", cursive;
+}
 
-    .hero .fa-chevron-down {
-        margin-top: 45.5rem;
-        font-size: 5rem;
-        color: #1D2E26;
-    }
-    /*Intro Styles*/
+.hero .jumbotron .jumboName {
+    margin-top: 4rem;
+    color: #1D2E26;
+    font-size: 4.5rem;
+}
 
-    .introduction {
-        margin-top: 11rem;
-        clear: both;
-        height: 40rem;
-        text-align: left;
-    }
+.hero .jumbotron h4 {
+    color: #fff;
+    font-size: 3rem;
+    margin-top: 3rem;
+}
 
-    .introduction h1 {
-        margin-bottom: 6rem;
-    }
+.hero .fa-chevron-down {
+    margin-top: 45.5rem;
+    font-size: 5rem;
+    color: #1D2E26;
+}
 
-    .introduction h3,
-    .introduction h2 {
-        line-height: 1.37;
-    }
-    /*Portfolio Styles*/
 
-    .portfolio {
-        clear: both;
-        color: #fff;
-        text-align: center;
-        margin-top: 8rem;
-    }
+/*Intro Styles*/
 
-    .portfolio .box {
-        height: 54rem;
-        padding-bottom: 4rem;
-        padding-top: 12rem;
-    }
+.introduction {
+    margin-top: 11rem;
+    clear: both;
+    height: 40rem;
+    text-align: left;
+    line-height: 1.37;
+}
 
-    .portfolio .box h2 {
-        min-height: 12rem;
-        margin-top: 0;
-    }
+.introduction img {
+    width: 90%;
+}
 
-    .portfolio .box h4 {
-        min-height: 10rem;
-    }
 
-    .portfolio .box:hover {
-        border: 1px solid #333;
-        box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.75);
-    }
+/*Portfolio Styles*/
 
-    .portfolio .shortBox {
-        height: 12rem;
-    }
+.portfolio {
+    clear: both;
+    color: #fff;
+    text-align: center;
+    margin-top: 8rem;
+}
 
-    .portfolio .info {
-        min-height: 36rem;
-        padding: 1rem;
-    }
+.portfolio .box {
+    height: 54rem;
+    padding-bottom: 4rem;
+    padding-top: 12rem;
+}
 
-    .screenshot {
-        max-height: 60rem;
-        width: 80%;
-        padding-top: 6rem;
-    }
+.portfolio .box h2 {
+    min-height: 12rem;
+    margin-top: 0;
+}
 
-    iframe {
-        width: 100%;
-        height: 46rem;
-        padding-top: 3rem;
-        transform: scale(0.75, 0.75);
-        transform-origin: top left;
-    }
+.portfolio .box h4 {
+    min-height: 10rem;
+}
 
-    #pictionary {
-        background: rgba(79, 124, 103, 0.9);
-    }
+.portfolio .box:hover {
+    border: 1px solid #333;
+    box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.75);
+}
 
-    #quizApp {
-        background: rgba(49, 77, 64, 0.9);
-    }
+.portfolio .shortBox {
+    height: 12rem;
+}
 
-    #apiHack {
-        background: rgba(29, 46, 38, 0.9);
-    }
+.portfolio .info {
+    min-height: 36rem;
+    padding: 1rem;
+}
 
-    #noteKeeper {
-        background: rgba(59, 93, 77, 0.9);
-    }
-    /*Skills Styles*/
+.screenshot {
+    max-height: 60rem;
+    width: 80%;
+    padding-top: 6rem;
+}
 
-    .icons img {
-        max-height: 10rem;
-        width: 10rem;
-        margin-top: 4rem;
-    }
-    /*Details Styles*/
+#pictionary {
+    background: rgba(79, 124, 103, 0.9);
+}
 
-    .closeDetails {
-        margin-top: 1rem;
-        margin-right: 4rem;
-        text-align: right;
-        color: #444;
-    }
+#quizApp {
+    background: rgba(49, 77, 64, 0.9);
+}
 
-    i:hover,
-    .closeDetails:hover {
-        cursor: pointer;
-    }
+#apiHack {
+    background: rgba(29, 46, 38, 0.9);
+}
 
-    #pictionaryImage {
-        border: 10px solid rgba(79, 124, 103, 0.9);
-        margin-top: -8.2rem;
-    }
+#noteKeeper {
+    background: rgba(59, 93, 77, 0.9);
+}
 
-    #quizAppImage {
-        border: 10px solid rgba(49, 77, 64, 0.9);
-        margin-top: -8.1rem;
-    }
 
-    #apiHackImage {
-        border: 10px solid rgba(29, 46, 38, 0.9);
-        margin-top: -8rem;
-    }
+/*Skills Styles*/
 
-    #noteKeeperImage {
-        border: 10px solid rgba(59, 93, 77, 0.9);
-        margin-top: -8.3rem;
-    }
+.icons img {
+    max-height: 10rem;
+    width: 10rem;
+    margin-top: 4rem;
+}
 
-    #pictionaryImage,
-    #quizAppImage,
-    #apiHackImage,
-    #noteKeeperImage {
-        display: none;
-    }
 
-    .details h4 {
-        color: #444;
-        margin-top: 7rem;
-    }
+/*Details Styles*/
 
-    .details .btn {
-        background-color: #fff;
-        border: 1px solid #1D2E26;
-        color: #1D2E26;
-        margin: 4rem auto;
-    }
+.closeDetails {
+    margin-top: 1rem;
+    margin-right: 4rem;
+    text-align: right;
+    color: #444;
+}
 
-    .demoReroute {
-        color: #444;
-        margin-bottom: 3rem;
-        margin-top: -3rem;
-    }
-    /*ContactStyles*/
+i:hover,
+.closeDetails:hover {
+    cursor: pointer;
+}
 
-    .contactInfo {
-        text-align: center;
-    }
+#pictionaryImage {
+    border: 10px solid rgba(79, 124, 103, 0.9);
+    margin-top: -8.2rem;
+}
 
-    .contactInfo h2 {
-        text-align: center;
-        margin-top: 8rem;
-    }
+#quizAppImage {
+    border: 10px solid rgba(49, 77, 64, 0.9);
+    margin-top: -8.1rem;
+}
 
-    .contactInfo p {
-        padding: 1rem;
-    }
+#apiHackImage {
+    border: 10px solid rgba(29, 46, 38, 0.9);
+    margin-top: -8rem;
+}
 
-    .contactInfo a {
-        color: #608976;
-    }
+#noteKeeperImage {
+    border: 10px solid rgba(59, 93, 77, 0.9);
+    margin-top: -8.3rem;
+}
 
-    .contactInfo a:hover {
-        color: #1D2E26;
-        text-decoration: none;
-    }
+#pictionaryImage,
+#quizAppImage,
+#apiHackImage,
+#noteKeeperImage {
+    display: none;
+}
 
-    contactInfo .fa {
-        margin-right: 1.5rem;
-        margin-top: 1rem;
-    }
-    /* Footer styles
+.details h4 {
+    color: #444;
+    margin-top: 7rem;
+}
+
+.details .btn {
+    background-color: #fff;
+    border: 1px solid #1D2E26;
+    color: #1D2E26;
+    margin: 4rem auto;
+}
+
+.demoReroute {
+    color: #444;
+    margin-bottom: 3rem;
+    margin-top: -3rem;
+}
+
+
+/*ContactStyles*/
+
+.contactInfo {
+    text-align: center;
+}
+
+.contactInfo h2 {
+    text-align: center;
+    margin-top: 8rem;
+}
+
+.contactInfo p {
+    padding: 1rem;
+}
+
+.contactInfo a {
+    color: #608976;
+}
+
+.contactInfo a:hover {
+    color: #1D2E26;
+    text-decoration: none;
+}
+
+contactInfo .fa {
+    margin-right: 1.5rem;
+    margin-top: 1rem;
+}
+
+
+/* Footer styles
 (all the styles inside the < footer > tag)
 */
 
-    footer {
-        height: 10rem;
-        background-color: #1D2E26;
-        color: #fff;
-        margin-top: 8rem;
-        text-align: center;
-        margin-bottom: -3rem;
-    }
+footer {
+    height: 10rem;
+    background-color: #1D2E26;
+    color: #fff;
+    margin-top: 8rem;
+    text-align: center;
+    margin-bottom: -3rem;
+}
 
-    footer p {
-        font-size: 0.9rem;
-    }
+footer p {
+    font-size: 0.9rem;
+}
 
-    footer a {
-        color: #fff;
-    }
+footer a {
+    color: #fff;
+}
 
-    footer a:hover {
-        color: #fff;
-    }
-    /* Responsive styles
-    (the very last module in the CSS, contains all the media queries and it is dealing with the compatibility with mobiles and tablets)
-*/
-    /*ipad lanscape / small laptop*/
-    /* @media only screen and (max-width: 1024px) {
-        /* acting like an IF statement, the media query is a set of conditions in which the containing css will be applied
-    for example the statament above says: IF the media on which this CSS is going to used is SCREEN (Mobiles, Tables, Laptops, Desktops or Projectors) and the maximum resolution of that device is 1024px, THEN apply the body color blue for all the text
+footer a:hover {
+    color: #fff;
+}
 
-        body {
-            color: blue;
-        }
-    }
-    /*ipad potrait*/
 
-    @media only screen and (max-width: 768px) {
-        body {
-            color: red;
-        }
-    }
-    /*iPhone landscape*/
+/* Responsive styles*/
 
-    @media only screen and (max-width: 480px) {
-        body {
-            color: green;
-        }
-        .icons img {
-            max-height: 5rem;
-            width: 5rem;
-            margin-top: 2rem;
-        }
+@media only screen and (max-width: 1460px) {
+    .introduction img {
+        padding-top: 2rem;
     }
+}
+
+@media only screen and (max-width: 989px) {
+    .introduction img {
+        width: 70%;
+        padding-top: 0rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .introduction img {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .icons img {
+        max-height: 5rem;
+        width: 5rem;
+        margin-top: 2rem;
+    }
+}
