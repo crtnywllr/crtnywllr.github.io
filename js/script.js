@@ -5,12 +5,12 @@ $(document).ready(function () {
             el.toggle();
             el.addClass("animated fadeIn");
         });
-        $(".portfolio i").toggleClass("fa-chevron-down fa-chevron-up");
+        $(".portfolio i").toggleClass("fa-chevron-up fa-chevron-down");
         $(".description").toggle();
         $(".contract").toggle();
         show.addClass("animated fadeIn");
         show.toggleClass("box shortBox");
-        show.toggleClass("col-md-3 col-md-12");
+        show.toggleClass("col-lg-3 col-lg-12");
         showImage.toggle();
         showImage.addClass("animated fadeIn bottomSpacer")
     };
